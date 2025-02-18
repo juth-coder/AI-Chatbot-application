@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#EEEEFF, #C8C7FF);
+}
+
+.chatbot-popup {
+    width: 420px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 128px rgba(0, 0, 0, 0.1), 0 32px 64px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    background: #00CED1;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.header-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.chat-body {
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    max-width: 75%;
+}
+
+.bot-message {
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.user-message {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.message-text {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+}
+
+.bot-message .message-text {
+    background: #F2F2FF;
+    border-radius: 12px 12px 12px 3px;
+}
+
+.user-message .message-text {
+    background: #5350C4;
+    color: #fff;
+    border-radius: 12px 12px 3px 12px;
+}
+
+.chat-footer {
+    background: #fff;
+    padding: 15px;
+}
+
+.chat-form {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 32px;
+    border: 1px solid #CCCCE5;
+    padding: 5px;
+}
+
+.chat-form:focus-within {
+    border-color: #5350C4;
+}
+
+.message-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+}
+
+.chat-controls {
+    display: flex;
+    align-items: center;
+}
+
+#send-message {
+    background: #5350C4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#send-message:hover {
+    background: #3d39ac;
+}
+
